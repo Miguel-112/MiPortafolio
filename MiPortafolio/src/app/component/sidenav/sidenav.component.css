@@ -150,14 +150,17 @@
       /*contenido  */
 
       .contenido {
-        margin-left: 5rem; /* Para que el contenido no se superponga con el sidebar */
+        margin-left: 5rem;
         padding: 2rem;
-        background-color: #5189BA;
+        background-color: #7c9ecc;
         height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        
       }
       
       .caption {
         margin-top: 4rem;
+        text-align: left;
         /* text-align: center; */
       }
       
@@ -243,11 +246,112 @@
       }
       
    /* profile */
-   .profile-pic {
+   .profile-pic {                                        
     width: 100px;
-    height: 100px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 0 0 3px #fff, 0 0 0 4px #888;
   }
+
+
+
+  .title{
+    
+      background-color: #0064a4 !important;
+     
+    
+  }
+
+  .title2{
+    
+    color: #0064a4 !important;
+   
+  
+}
+
+
+  .caption {
+    margin-top: 4rem;
+    text-align: left;
+    color: #fff;
+  }
+
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .container dd {
+      width: 70%;
+      margin: 2rem 2rem;
+    }
+  }
+
+ 
+
+  .container dd {
+    line-height: 1.9;
+  }
+
+
+
+  .elemento {
+  display: none;
+  margin-right: 0.5em;
+}
+
+.actual {
+  display: inline;
+}
+
+.animated-text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.animated-text span {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.animated-text span.active {
+  opacity: 1;
+}
+
+.animated-text span:first-child {
+  position: relative;
+}
+
+#linea2, #linea3 {
+  display: none;
+}
+
+/* puntero   */
+.puntero {
+  position: absolute;
+  left: 0;
+  bottom: 0.2em;
+  width: 0.5em;
+  height: 1em;
+  background-color: white;
+  animation: parpadeo 1s infinite;
+  caret-color: transparent;
+}
+
+@keyframes parpadeo {
+  50% {
+    opacity: 0;
+  }
+}
+
+  
   

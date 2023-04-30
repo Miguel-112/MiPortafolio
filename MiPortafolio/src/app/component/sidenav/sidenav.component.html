@@ -4,7 +4,7 @@
       <button class="logo" (click)="toggleCollapse()">M</button>
       <div class="logo-text" @fadeInOut *ngIf="collapsed"> </div>
 
-      <img src="/assets/img/foto.jpg" class="circle img-responsive profile-pic" alt="avatar">
+      <img src="/assets/img/foto.jpg" class="circle img-responsive profile-pic" *ngIf="collapsed" alt="avatar">
 
       <button class="btn-close" *ngIf="collapsed" @rotate (click)="closeSidenav()">
         <i class="fal fa-times close-icon"></i>
@@ -118,18 +118,68 @@
 
 
 
-  <div class="contenido" id="aboutme">
+  <div class="contenido" id="aboutme --bs-primary-bg-subtle">
 
-    <div id="presentacion1" class="caption">
-        <h2>Hola, soy <span class="teal">Miguel Sardo.</span></h2>
-        <h5 style="color:#fff">Un <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-        <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-        <h5>
-          Soy un autodidacta con gran capacidad de aprendizaje y una pasión por la programación. Me encanta enfrentarme a problemas complejos y desafiantes del mundo real, ya que mi mente curiosa siempre está buscando soluciones innovadoras. Además, tengo un gran compromiso con la mejora continua, lo que me impulsa a seguir aprendiendo y perfeccionando mis habilidades como programador.
-        </h5>
+
+    
+
+    <div id="presentacion1" class="caption --bs-primary-bg-subtle">
+
+      
+        <div class="container" >
+          
+          <dl class="row">
+            <dt class="col-sm-4" style="margin-left: 25px;"> <h1><em> Hola, soy</em>  <span class="title display-1" style="margin-left: 5px;"><em> Miguel Sardo.</em>  </span></h1></dt>
+
+               <br><br>
+               <!-- <h5  style="color:#fff; margin-left: 30px;"><em>Un </em><span style="margin-left: 5px;" id="contenedor" ><em  (click)="mostrarSiguienteLinea()"></em></span></h5> -->
+               
+
+                 <h5 style="color:#fff; margin-left: 30px;">
+                  <em style="font-size: 24px;">Un</em>
+                  <span style="margin-left: 5px; font-size:24px" class="title2" id="contenedor">
+                    <em (click)="mostrarSiguienteLinea()">Texto a mostrar</em>
+                    <span class="puntero"></span>
+                  </span>
+                </h5>
+
+             
+              
+              
+              
+              
+              
+              
+              
+
+             <!-- <h5 style="color:#fff"> <span class="typing" style="font-weight: 300; color:#004d40"></span></h5> -->
+
+          
+
+
+            
+
+             
+
+            <dd class="col-sm-8"><p><em>{{ descripciontitulo }}</em></p></dd>
+          </dl>
+
+
       </div>
+      </div>
+      
+      
 
   </div>
+
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Entusiasta", "Desarrollador web", "Ingeniero"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
 
 
   <div class="contenido2">
@@ -138,6 +188,13 @@
         <h2>Hola, soy <span class="teal">Miguel Sardo.</span></h2>
         <h5 style="color:#fff">Un <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
         <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+        
+        <div class="container">
+        
+          
+        </div>
+        
+        
         <h5>
           Soy un autodidacta con gran capacidad de aprendizaje y una pasión por la programación. Me encanta enfrentarme a problemas complejos y desafiantes del mundo real, ya que mi mente curiosa siempre está buscando soluciones innovadoras. Además, tengo un gran compromiso con la mejora continua, lo que me impulsa a seguir aprendiendo y perfeccionando mis habilidades como programador.
         </h5>
