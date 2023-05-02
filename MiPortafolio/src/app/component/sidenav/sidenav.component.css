@@ -153,8 +153,10 @@
         margin-left: 5rem;
         padding: 2rem;
         background-color: #7c9ecc;
-        height: 100vh;
+        height: auto;
         font-family: 'Roboto', sans-serif;
+        
+       
         
       }
       
@@ -185,15 +187,20 @@
 
 
       .contenido2 {
-        margin-left: 5rem; /* Para que el contenido no se superponga con el sidebar */
+        margin-left: 5rem;
         padding: 2rem;
-        background-color: red;
-        height: 100vh;
+        background-color: #FFFFFF;
+        height: 180vh;
+        
+       
+        
       }
+
+      
       
       .caption {
         margin-top: 4rem;
-        text-align: center;
+        text-align: left;
       }
       
       .teal {
@@ -213,13 +220,47 @@
           width: 100%;
         }
       }
+
+      @media (max-width: 576px) {
+        .contenido2 {
+          height: auto;
+          max-height: calc(220vh - 100px); /* altura máxima */
+          text-align: left;
+          width: 80%;
+          overflow-y: auto; /* agregamos una barra de desplazamiento vertical si es necesario */
+        }
+
+      }
+
+      @media (max-width: 590px) {
+        .contenido2 {
+          height: auto;
+          max-height: calc(250vh - 100px); /* altura máxima */
+          text-align: left;
+          width: 80%;
+          overflow-y: auto; /* agregamos una barra de desplazamiento vertical si es necesario */
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        /* Estilos para dispositivos medianos */
+        .contenido2 {
+          height: auto;
+          max-height: calc(220vh - 100px); /* altura máxima */
+          text-align: left;
+          width: 80%;
+          overflow-y: auto; /* agregamos una barra de desplazamiento vertical si es necesario */
+        }
+      }
+      
 
 
       .contenido3 {
         margin-left: 5rem; /* Para que el contenido no se superponga con el sidebar */
         padding: 2rem;
-        background-color: yellow;
-        height: 100vh;
+        background-color: #fff;
+         height: auto;
+       
       }
       
       .caption {
@@ -235,6 +276,27 @@
         display: inline-block;
         animation: typing 2s steps(20, end) infinite;
       }
+
+      @media (max-width: 576px) {
+        .contenido3 {
+          height: auto;
+          height:auto;
+          text-align: left;
+          width: 80%;
+          overflow-y: auto; /* agregamos una barra de desplazamiento vertical si es necesario */
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        /* Estilos para dispositivos medianos */
+        .contenido3 {
+          height: auto;
+          height:auto; /* altura máxima */
+          text-align: left;
+          width: 80%;
+          overflow-y: auto; /* agregamos una barra de desplazamiento vertical si es necesario */
+        }
+      }
       
       @keyframes typing {
         from {
@@ -244,6 +306,10 @@
           width: 100%;
         }
       }
+
+      
+
+      
       
    /* profile */
    .profile-pic {                                        
@@ -298,7 +364,11 @@
 
   .container dd {
     line-height: 1.9;
+ 
+   
+   
   }
+  
 
 
 
@@ -352,6 +422,88 @@
     opacity: 0;
   }
 }
+
+
+/* Botones */
+.icon-btn {
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 70px;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+}
+
+.github {
+  color: black;
+}
+
+.icon-btn.github {
+  color:black;
+}
+
+.icon-btn.github:hover {
+  background-color: black;
+  color: #FFFFFF;
+}
+
+
+
+.icon-btn.linkedin {
+  color: #0064a4;
+}
+
+.icon-btn.linkedin:hover {
+  background-color: #0064a4;
+  color: #FFFFFF;
+}
+
+
+
+
+
+.social {
+  margin: 0 auto;
+  width: auto;
+  text-align: inherit;
+ 
+ 
+}
+
+
+
+
+.margen {
+  background-color: #0064a4;
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .margen {
+    justify-content: center;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .col-sm-8 p {
+    font-size: 16px; /* ajuste el tamaño de fuente según sea necesario */
+  }
+}
+
+
 
   
   

@@ -1,222 +1,283 @@
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : ''">
+  <div class="logo-container">
+    <button class="logo" (click)="toggleCollapse()">M</button>
+    <div class="logo-text" @fadeInOut *ngIf="collapsed"></div>
 
-  <div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : ''">
-    <div class="logo-container">
-      <button class="logo" (click)="toggleCollapse()">M</button>
-      <div class="logo-text" @fadeInOut *ngIf="collapsed"> </div>
+    <a href="#presentation">
+      <img
+        src="/assets/img/foto.jpg"
+        class="circle img-responsive profile-pic"
+        *ngIf="collapsed"
+        alt="avatar"
+      />
+    </a>
 
-      <img src="/assets/img/foto.jpg" class="circle img-responsive profile-pic" *ngIf="collapsed" alt="avatar">
+    <button
+      class="btn-close"
+      *ngIf="collapsed"
+      @rotate
+      (click)="closeSidenav()"
+    >
+      <i class="fal fa-times close-icon"></i>
+    </button>
+  </div>
 
-      <button class="btn-close" *ngIf="collapsed" @rotate (click)="closeSidenav()">
-        <i class="fal fa-times close-icon"></i>
-      </button>
+  <ul class="sidenav-nav">
+    <li class="sidenav-nav-item">
+      <a class="sidenav-nav-link" href="#aboutme">
+        <i class="fas fa-user-circle"></i>
+
+        <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+          About Me
+        </span>
+      </a>
+    </li>
+
+    <li class="sidenav-nav-item">
+      <a class="sidenav-nav-link" href="#experience">
+        <!-- <i class="sidenav-link-icon" class="fa fa-home"></i> -->
+
+        <!-- <i class="fal fa-reply-all"></i> -->
+
+        <i class="fas fa-code"></i>
+        <i class="fa-light fa-escalator"></i>
+        <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+          Eperience
+        </span>
+      </a>
+    </li>
+
+    <li class="sidenav-nav-item">
+      <a class="sidenav-nav-link" href="#presentacion2">
+        <i class="fas fa-chart-bar"></i>
+
+        <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+          Skill
+        </span>
+      </a>
+    </li>
+
+    <li class="sidenav-nav-item">
+      <a class="sidenav-nav-link" href="#presentacion2">
+        <i class="fas fa-graduation-cap"></i>
+
+        <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+          Education
+        </span>
+      </a>
+    </li>
+
+    <li class="sidenav-nav-item">
+      <a class="sidenav-nav-link" href="#presentacion2">
+        <i class="fas fa-envelope"></i>
+
+        <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+          Contact
+        </span>
+      </a>
+    </li>
+
+    <li class="sidenav-nav-item">
+      <a class="sidenav-nav-link" href="#presentacion2">
+        <i class="fas fa-file-alt"></i>
+
+        <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+          Resume
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="contenido" id="presentation">
+  <div id="presentacion1" class="caption --bs-primary-bg-subtle">
+    <div class="container" style="margin-left: 25px">
+      <dl class="row">
+        <dt class="col-sm-6">
+          <h1>
+            <em class="display-5">Hola, soy</em>
+            <span class="title display-5" style="margin-left: 5px"
+              ><em> Miguel Sardo.</em>
+            </span>
+          </h1>
+        </dt>
+
+        <br /><br /><br /><br />
+        <h5 style="color: #fff; margin-left: 30px">
+          <em class="display-5" style="font-size: 24px">Un</em>
+          <span
+            style="margin-left: 5px; font-size: 24px"
+            class="title2 display-5"
+            id="contenedor"
+          >
+            <em (click)="mostrarSiguienteLinea()"></em>
+            <span class="puntero"></span>
+          </span>
+        </h5>
+
+        <dd class="col-sm-8">
+          <p>
+            <em>{{ descripciontitulo }}</em>
+          </p>
+
+          <a
+            href="https://www.linkedin.com/in/miguel-sardo-suarez-116147254/"
+            target="_blank"
+          >
+            <button class="icon-btn linkedin" @rotate>
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+          </a>
+
+          <a href="https://github.com/Miguel-112" target="_blank">
+            <button class="icon-btn github" @rotate>
+              <i class="fab fa-github"></i>
+            </button>
+          </a>
+        </dd>
+
+        <dd class="col-sm-8">
+          <p>
+            <button type="button" class="btn btn-light">Read more</button>
+
+            <button
+              style="margin-left: 5px"
+              type="button"
+              class="btn btn-outline-dark"
+            >
+              Contact Me
+            </button>
+          </p>
+        </dd>
+      </dl>
     </div>
-
-    <ul class="sidenav-nav">
-     
-
-      <li class="sidenav-nav-item" >
-        <a
-        
-          class="sidenav-nav-link"  href="#presentacion2">
-
-          <i class="sidenav-link-icon"  class="fa fa-home"></i>
-
-
-          <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
-
-            About Me
-          </span>
-        </a>
-      </li>
-
-
-      <li class="sidenav-nav-item" >
-        <a
-        
-          class="sidenav-nav-link"  href="#presentacion2">
-
-          <i class="sidenav-link-icon"  class="fa fa-home"></i>
-
-
-          <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
-
-            Eperience
-          </span>
-        </a>
-      </li>
-
-
-      <li class="sidenav-nav-item" >
-        <a
-        
-          class="sidenav-nav-link"  href="#presentacion2">
-
-          <i class="sidenav-link-icon"  class="fa fa-home"></i>
-
-
-          <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
-
-            Skill
-          </span>
-        </a>
-      </li>
-
-
-
-      <li class="sidenav-nav-item" >
-        <a
-        
-          class="sidenav-nav-link"  href="#presentacion2">
-
-          <i class="sidenav-link-icon"  class="fa fa-home"></i>
-
-
-          <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
-
-            Education
-          </span>
-        </a>
-      </li>
-
-
-      <li class="sidenav-nav-item" >
-        <a
-        
-          class="sidenav-nav-link"  href="#presentacion2">
-
-          <i class="sidenav-link-icon"  class="fa fa-home"></i>
-
-
-          <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
-
-            Contact
-          </span>
-        </a>
-      </li>
-
-
-      <li class="sidenav-nav-item" >
-        <a
-        
-          class="sidenav-nav-link"  href="#presentacion2">
-
-          <i class="sidenav-link-icon"  class="fa fa-home"></i>
-
-
-          <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
-
-            Resume
-          </span>
-        </a>
-      </li>
-
-
-
-
-    </ul>
   </div>
+</div>
 
+<div class="margen">
+  <h5>
+    <span style="margin-left: 85px; color: #fff" class="display-5"
+      ><em> ABOUT ME</em></span
+    >
+  </h5>
+</div>
 
+<div class="contenido2 container" id="aboutme">
+  <div class="row">
+    <dd class="col-sm-8">
+      <p>
+        <em>{{ descripcionaboutme }}</em>
+      </p>
+    </dd>
 
-  <div class="contenido" id="aboutme --bs-primary-bg-subtle">
+    <dd class="col-sm-8" style="color: black">
+      <p>
+        <em>
+          <p>
+            <strong> Languages:</strong>{{ lenguajes }} <br />
+            <strong> Databases:</strong> {{ Databases }}<br />
+            <strong> Frameworks:</strong>{{ Framework }} <br />
+            <strong>Tools & Technologies:</strong> {{ Technologies }}
+          </p>
+        </em>
+      </p>
+    </dd>
 
-
-    
-
-    <div id="presentacion1" class="caption --bs-primary-bg-subtle">
-
-      
-        <div class="container" >
-          
-          <dl class="row">
-            <dt class="col-sm-4" style="margin-left: 25px;"> <h1><em> Hola, soy</em>  <span class="title display-1" style="margin-left: 5px;"><em> Miguel Sardo.</em>  </span></h1></dt>
-
-               <br><br>
-               <!-- <h5  style="color:#fff; margin-left: 30px;"><em>Un </em><span style="margin-left: 5px;" id="contenedor" ><em  (click)="mostrarSiguienteLinea()"></em></span></h5> -->
-               
-
-                 <h5 style="color:#fff; margin-left: 30px;">
-                  <em style="font-size: 24px;">Un</em>
-                  <span style="margin-left: 5px; font-size:24px" class="title2" id="contenedor">
-                    <em (click)="mostrarSiguienteLinea()">Texto a mostrar</em>
-                    <span class="puntero"></span>
-                  </span>
-                </h5>
-
-             
-              
-              
-              
-              
-              
-              
-              
-
-             <!-- <h5 style="color:#fff"> <span class="typing" style="font-weight: 300; color:#004d40"></span></h5> -->
-
-          
-
-
-            
-
-             
-
-            <dd class="col-sm-8"><p><em>{{ descripciontitulo }}</em></p></dd>
-          </dl>
-
-
-      </div>
-      </div>
-      
-      
-
+    <dd class="col-sm-8">
+      <p>
+        <em>{{ DescripcionAbout }}</em>
+      </p>
+    </dd>
   </div>
-
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Entusiasta", "Desarrollador web", "Ingeniero"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
+</div>
 
 
-  <div class="contenido2">
 
-    <div id="presentacion" class="caption">
-        <h2>Hola, soy <span class="teal">Miguel Sardo.</span></h2>
-        <h5 style="color:#fff">Un <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-        <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-        
-        <div class="container">
-        
-          
+<div class="margen">
+  <h5>
+    <span style="margin-left: 85px; color: #fff" class="display-5"
+      ><em> EXPERIENCE</em></span
+    >
+  </h5>
+</div>
+
+<div id="experience" class="contenido3">
+  <div id="presentacion" class="caption">
+    <dd class="col-sm-8">
+      <div class="card" *ngFor="let project of projects">
+        <div class="card-header">
+          <div class="row">
+            <dd class="col-sm-8 text-right">
+              <p>
+                <em>
+                  {{ project.title }}
+                </em>
+              </p>
+            </dd>
+
+            <dd class="col-sm-4" style="color: #955f20">
+              <p>
+                <em>{{ project.typeProject }}</em>
+              </p>
+            </dd>
+          </div>
         </div>
-        
-        
-        <h5>
-          Soy un autodidacta con gran capacidad de aprendizaje y una pasión por la programación. Me encanta enfrentarme a problemas complejos y desafiantes del mundo real, ya que mi mente curiosa siempre está buscando soluciones innovadoras. Además, tengo un gran compromiso con la mejora continua, lo que me impulsa a seguir aprendiendo y perfeccionando mis habilidades como programador.
-        </h5>
+        <div class="card-body">
+          <div class="card-text">
+            <dd class="col-sm-12">
+              <ul>
+                <li>
+                  <p>
+                    <em>
+                      {{ project.description }}
+                    </em>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <em>
+                      se desarrolló los módulos de:
+                      <strong>
+                        {{ project.module }}
+                      </strong>
+                    </em>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <em>{{ project.projectimpact }}</em>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <em> <strong>Tools:</strong>{{ project.technologies }}</em>
+                  </p>
+                </li>
+              </ul>
+            </dd>
+
+            <dd class="col-sm-8">
+              <div class="card-footer">
+                <figcaption style="margin-top: 10px" class="blockquote-footer">
+                  {{ project.mes }} <cite title="Source Title"> {{ project.anio }}</cite>
+                </figcaption>
+              </div>
+            </dd>
+          </div>
+        </div>
       </div>
-
+    </dd>
   </div>
+</div>
 
 
 
-  <div id="presentacion2" class="contenido3">
-
-    <div id="presentacion" class="caption">
-        <h2>Hola, soy <span class="teal">Miguel Sardo.</span></h2>
-        <h5 style="color:#fff">Un <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-        <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-        <h5>
-          Soy un autodidacta con gran capacidad de aprendizaje y una pasión por la programación. Me encanta enfrentarme a problemas complejos y desafiantes del mundo real, ya que mi mente curiosa siempre está buscando soluciones innovadoras. Además, tengo un gran compromiso con la mejora continua, lo que me impulsa a seguir aprendiendo y perfeccionando mis habilidades como programador.
-        </h5>
-      </div>
-
-  </div>
-
-
-
-  
+<div class="margen">
+  <h5>
+    <span style="margin-left: 85px; color: #fff" class="display-5"
+      ><em> SKILL</em></span
+    >
+  </h5>
+</div>

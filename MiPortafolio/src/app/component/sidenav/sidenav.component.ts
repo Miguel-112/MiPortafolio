@@ -1,6 +1,7 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { navbarData } from './nav-data';
 import { trigger, transition, style, animate, keyframes } from '@angular/animations';
+import { ProjectData } from './project-data';
 
 
 interface sidenavToggle {
@@ -56,6 +57,18 @@ export class SidenavComponent {
   collapsed = false;
   screenWidth = 0;
   descripciontitulo='Soy un autodidacta con gran capacidad de aprendizaje y una pasión por la programación. Me encanta enfrentarme a problemas complejos y desafiantes del mundo real, ya que mi mente curiosa siempre está buscando soluciones innovadoras. Además, tengo un gran compromiso con la mejora continua, lo que me impulsa a seguir aprendiendo y perfeccionando mis habilidades como programador.';
+  
+  descripcionaboutme='Soy un desarrollador web full stack de Colombia que se especializa en entregar soluciones usando una amplia variedad de herramientas y lenguajes, incluyendo HTML, CSS, JavaScript, Node.js, Nestjs, Angular,Laravel, SQL server y SQL. Además, me considero una persona proactiva, dinámica y responsable que disfruta trabajar en equipo para ofrecer los mejores proyectos a los clientes. Como seguidor de las buenas prácticas y metodologías ágiles, siempre estoy buscando formas de mejorar mi trabajo y mantenerme actualizado con las últimas tecnologías. Soy un autodidacta apasionado y estoy siempre dispuesto a aprender y formarme en cualquier tecnología que pueda ayudarme a convertirme en un mejor desarrollador. Si estás buscando un desarrollador web que sea dedicado, responsable y esté comprometido con el éxito del proyecto, estoy seguro de que puedo cumplir con tus expectativas. ¡Estoy emocionado de trabajar contigo y ofrecer soluciones de alta calidad!  ';
+
+  lenguajes='Python, Java, JavaScript, HTML5/CSS3,TypeScrip,PHP';
+  Databases='Oracle, MySQL, PostgreSQL, SQL server, SQLite,';
+  Framework='Angular,Node.js, Bootstrap, Nestjs, Android Studio,Laravel';
+  Technologies='Git, Heroku, JIRA';
+  DescripcionAbout='Estoy en busca de una oportunidad laboral que me permita combinar mis habilidades en Ingeniería de Software en un puesto desafiante, con el objetivo de obtener un desarrollo profesional significativo, experiencias interesantes y un crecimiento personal constante. Estoy emocionado de encontrar un trabajo que me permita aplicar mis habilidades técnicas y mi pasión por la tecnología, mientras colaboro con un equipo dinámico y motivado.';
+
+  projects = ProjectData;
+
+
   public lineas = ["Ingeniero", "Entusiasta", "Desarrollador web"];
 
 
