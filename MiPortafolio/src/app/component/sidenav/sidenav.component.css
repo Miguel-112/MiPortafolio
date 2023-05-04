@@ -672,15 +672,23 @@
 
 .no-underline {
   text-decoration: none; /* Quita el subrayado */
+  color: #0064a4 !important;
+ 
+  
 }
 
 /* Aplicamos la clase "no-underline" a los enlaces dentro de la clase "title2" */
 .title2 a.no-underline {
   text-decoration: none; /* Quita el subrayado */
-  color: inherit; /* Hereda el color del texto de la clase "title2" */
+  color: #0064a4 !important; /* Hereda el color del texto de la clase "title2" */
   font-weight: inherit; /* Hereda el peso de fuente de la clase "title2" */
   /* Puedes seguir heredando otros estilos de la clase "title2" si lo deseas */
 }
+
+
+
+
+
 
 
 
