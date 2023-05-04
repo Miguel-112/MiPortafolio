@@ -60,7 +60,7 @@
     <li class="sidenav-nav-item">
       <a
         class="sidenav-nav-link"
-        href="#presentacion2"
+        href="#education"
         (click)="toggleCollapse()"
       >
         <i class="fas fa-graduation-cap"></i>
@@ -101,7 +101,7 @@
   </ul>
 </div>
 
-<div class="contenido " id="presentation">
+<div class="contenido" id="presentation">
   <div id="presentacion1" class="caption --bs-primary-bg-subtle">
     <div class="container" style="margin-left: 25px">
       <dl class="row">
@@ -211,64 +211,59 @@
   </h5>
 </div>
 
-
 <div class="contenido3 container" id="experience">
   <div class="row">
     <div class="col-sm-12 text-right">
+      <div *ngFor="let project of projects" class="my-card-experience">
+        <div class="card">
+          <div class="card-header">
+            <p class="title2">
+              <em> {{ project.title }}</em>
+            </p>
 
+            <p>
+              <em class="text-right">{{ project.typeProject }}</em>
+            </p>
+          </div>
 
-     
-        <div *ngFor="let project of projects" class="my-card-experience">
-          <div class="card">
-            <div class="card-header">
-              <p class="title2">
-                <em> {{ project.title }}</em>
-              </p>
+          <div class="card-body">
+            <ul>
+              <li>
+                <p>
+                  <em>
+                    {{ project.description }}
+                  </em>
+                </p>
+              </li>
 
-              <p>
-                <em class="text-right">{{ project.typeProject }}</em>
-              </p>
-            </div>
+              <li>
+                <p>
+                  <em>
+                    se desarrolló los módulos de:
+                    <strong>
+                      {{ project.module }}
+                    </strong>
+                  </em>
+                </p>
+              </li>
 
-            <div class="card-body">
-              <ul>
-                <li>
-                  <p>
-                    <em>
-                      {{ project.description }}
-                    </em>
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <em>
-                      se desarrolló los módulos de:
-                      <strong>
-                        {{ project.module }}
-                      </strong>
-                    </em>
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <em>{{ project.projectimpact }}</em>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <em> <strong>Tools:</strong>{{ project.technologies }} </em>
-                  </p>
-                </li>
-              </ul>
-            </div>
+              <li>
+                <p>
+                  <em>{{ project.projectimpact }}</em>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <em> <strong>Tools:</strong>{{ project.technologies }} </em>
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-
+</div>
 
 <div class="margen">
   <h5>
@@ -348,7 +343,6 @@
   </div>
 </div>
 
-
 <div class="contenido4 container" id="skill">
   <div class="card">
     <div class="card-header">
@@ -387,11 +381,103 @@
   </div>
 </div>
 
+<div class="margen">
+  <h5>
+    <span style="margin-left: 85px; color: #fff" class="display-5"
+      ><em> EDUCATION </em></span
+    >
+  </h5>
+</div>
+
+
+
+<div class="contenido3 container" id="education">
+  <div class="row">
+    <div class="col-sm-12 text-right">
+      <div class="my-card-experience">
+        <div class="card">
+          <div class="card-header">
+            <p class="title2">
+              <a class="no-underline" href="https://www.unicesar.edu.co/index.php/es/">
+                <em>UNIVERSIDAD POPULAR DEL CESAR</em>
+              </a>
+            </p>
+
+            <p>
+              <em class="text-right">
+              
+              </em>
+            </p>
+          </div>
+
+          <div class="card-body">
+            <ul>
+              <li>
+                <p>
+                  <em>
+                    Colombia Valledupar/Cesar <br>
+                   <strong>Título:</strong>Ingeniero de sistemas
+                  </em>
+                </p>
+              </li>
+
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <div class="margen">
   <h5>
     <span style="margin-left: 85px; color: #fff" class="display-5"
-      ><em> Contact </em></span
+      ><em> Contact  Me</em></span
     >
   </h5>
+</div>
+
+
+
+
+<div class="contenido3 container" id="education">
+  <div class="row">
+    <div class="col-sm-12 text-right">
+      <div class="my-card-experience">
+        <div class="card">
+          <div class="card-header">
+            <p class="title2">
+              <a class="no-underline" href="https://www.unicesar.edu.co/index.php/es/">
+                <em>UNIVERSIDAD POPULAR DEL CESAR</em>
+              </a>
+            </p>
+
+            <p>
+              <em class="text-right">
+              
+              </em>
+            </p>
+          </div>
+
+          <div class="card-body">
+            <ul>
+              <li>
+                <p>
+                  <em>
+                    Colombia Valledupar/Cesar <br>
+                   <strong>Título:</strong>Ingeniero de sistemas
+                  </em>
+                </p>
+              </li>
+
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
