@@ -3,6 +3,10 @@ import { navbarData } from './nav-data';
 import { trigger, transition, style, animate, keyframes } from '@angular/animations';
 import { ProjectData } from './project-data';
 
+import { lenguajesData } from './lenguajes-databases';
+import { frameworksData } from './frameworks-database';
+import { methodologiesData } from './methodologies-database';
+
 
 interface sidenavToggle {
   screenWidth: number;
@@ -73,6 +77,13 @@ export class SidenavComponent {
 
 
   navData = navbarData;
+
+  lenguajesdabases = lenguajesData;
+  frameworks= frameworksData;
+
+  methodologies=methodologiesData;
+
+  
 
   toggleCollapse() {
     this.collapsed = !this.collapsed;

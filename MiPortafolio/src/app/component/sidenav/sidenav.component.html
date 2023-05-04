@@ -3,7 +3,7 @@
     <button class="logo" (click)="toggleCollapse()">M</button>
     <div class="logo-text" @fadeInOut *ngIf="collapsed"></div>
 
-    <a href="#presentation">
+    <a href="#presentation" (click)="toggleCollapse()">
       <img
         src="/assets/img/foto.jpg"
         class="circle img-responsive profile-pic"
@@ -24,7 +24,7 @@
 
   <ul class="sidenav-nav">
     <li class="sidenav-nav-item">
-      <a class="sidenav-nav-link" href="#aboutme">
+      <a class="sidenav-nav-link" href="#aboutme" (click)="toggleCollapse()">
         <i class="fas fa-user-circle"></i>
 
         <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
@@ -34,7 +34,7 @@
     </li>
 
     <li class="sidenav-nav-item">
-      <a class="sidenav-nav-link" href="#experience">
+      <a class="sidenav-nav-link" href="#experience" (click)="toggleCollapse()">
         <!-- <i class="sidenav-link-icon" class="fa fa-home"></i> -->
 
         <!-- <i class="fal fa-reply-all"></i> -->
@@ -48,7 +48,7 @@
     </li>
 
     <li class="sidenav-nav-item">
-      <a class="sidenav-nav-link" href="#presentacion2">
+      <a class="sidenav-nav-link" href="#skill" (click)="toggleCollapse()">
         <i class="fas fa-chart-bar"></i>
 
         <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
@@ -58,7 +58,11 @@
     </li>
 
     <li class="sidenav-nav-item">
-      <a class="sidenav-nav-link" href="#presentacion2">
+      <a
+        class="sidenav-nav-link"
+        href="#presentacion2"
+        (click)="toggleCollapse()"
+      >
         <i class="fas fa-graduation-cap"></i>
 
         <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
@@ -68,7 +72,11 @@
     </li>
 
     <li class="sidenav-nav-item">
-      <a class="sidenav-nav-link" href="#presentacion2">
+      <a
+        class="sidenav-nav-link"
+        href="#presentacion2"
+        (click)="toggleCollapse()"
+      >
         <i class="fas fa-envelope"></i>
 
         <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
@@ -78,7 +86,11 @@
     </li>
 
     <li class="sidenav-nav-item">
-      <a class="sidenav-nav-link" href="#presentacion2">
+      <a
+        class="sidenav-nav-link"
+        href="#presentacion2"
+        (click)="toggleCollapse()"
+      >
         <i class="fas fa-file-alt"></i>
 
         <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
@@ -89,7 +101,7 @@
   </ul>
 </div>
 
-<div class="contenido" id="presentation">
+<div class="contenido " id="presentation">
   <div id="presentacion1" class="caption --bs-primary-bg-subtle">
     <div class="container" style="margin-left: 25px">
       <dl class="row">
@@ -162,7 +174,7 @@
   </h5>
 </div>
 
-<div class="contenido2 container" id="aboutme">
+<div class="contenido3 container" id="aboutme">
   <div class="row">
     <dd class="col-sm-8">
       <p>
@@ -191,8 +203,6 @@
   </div>
 </div>
 
-
-
 <div class="margen">
   <h5>
     <span style="margin-left: 85px; color: #fff" class="display-5"
@@ -201,30 +211,26 @@
   </h5>
 </div>
 
-<div id="experience" class="contenido3">
-  <div id="presentacion" class="caption">
-    <dd class="col-sm-8">
-      <div class="card" *ngFor="let project of projects">
-        <div class="card-header">
-          <div class="row">
-            <dd class="col-sm-8 text-right">
-              <p>
-                <em>
-                  {{ project.title }}
-                </em>
-              </p>
-            </dd>
 
-            <dd class="col-sm-4" style="color: #955f20">
-              <p>
-                <em>{{ project.typeProject }}</em>
+<div class="contenido3 container" id="experience">
+  <div class="row">
+    <div class="col-sm-12 text-right">
+
+
+     
+        <div *ngFor="let project of projects" class="my-card-experience">
+          <div class="card">
+            <div class="card-header">
+              <p class="title2">
+                <em> {{ project.title }}</em>
               </p>
-            </dd>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="card-text">
-            <dd class="col-sm-12">
+
+              <p>
+                <em class="text-right">{{ project.typeProject }}</em>
+              </p>
+            </div>
+
+            <div class="card-body">
               <ul>
                 <li>
                   <p>
@@ -252,32 +258,140 @@
                 </li>
                 <li>
                   <p>
-                    <em> <strong>Tools:</strong>{{ project.technologies }}</em>
+                    <em> <strong>Tools:</strong>{{ project.technologies }} </em>
                   </p>
                 </li>
               </ul>
-            </dd>
-
-            <dd class="col-sm-8">
-              <div class="card-footer">
-                <figcaption style="margin-top: 10px" class="blockquote-footer">
-                  {{ project.mes }} <cite title="Source Title"> {{ project.anio }}</cite>
-                </figcaption>
-              </div>
-            </dd>
+            </div>
           </div>
         </div>
       </div>
-    </dd>
+    </div>
   </div>
-</div>
-
 
 
 <div class="margen">
   <h5>
     <span style="margin-left: 85px; color: #fff" class="display-5"
       ><em> SKILL</em></span
+    >
+  </h5>
+</div>
+
+<div class="contenido4 container" id="skill">
+  <div class="card">
+    <div class="card-header">
+      <dd class="col-sm-8 text-right">
+        <p class="title2"><em>Languages and Databases</em></p>
+      </dd>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-12 text-right">
+          <div class="card-text d-flex flex-wrap">
+            <div *ngFor="let item of lenguajesdabases" class="my-card">
+              <p>
+                <em>{{ item.name }}</em>
+              </p>
+
+              <div>
+                <div class="card-deckkk">
+                  <div class="cardlenguages">
+                    <img class="nueva-clase" [src]="item.ruta" />
+
+                    <div class="">
+                      <!-- <p class="card-text">{{ item.description }}</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contenido4 container" id="skill">
+  <div class="card">
+    <div class="card-header">
+      <dd class="col-sm-8 text-right">
+        <p class="title2"><em>Frameworks</em></p>
+      </dd>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-12 text-right">
+          <div class="card-text d-flex flex-wrap">
+            <div *ngFor="let item of frameworks" class="my-card-framework">
+              <p>
+                <em>{{ item.name }}</em>
+              </p>
+
+              <div>
+                <div class="card-deckkk">
+                  <div class="cardlenguages">
+                    <img class="nueva-clase" [src]="item.ruta" />
+
+                    <div class="">
+                      <!-- <p class="card-text">{{ item.description }}</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="contenido4 container" id="skill">
+  <div class="card">
+    <div class="card-header">
+      <dd class="col-sm-8 text-right">
+        <p class="title2"><em>methodologies and version control </em></p>
+      </dd>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-12 text-right">
+          <div class="card-text d-flex flex-wrap">
+            <div
+              *ngFor="let item of methodologies"
+              class="my-card-methodologies"
+            >
+              <p>
+                <em>{{ item.name }}</em>
+              </p>
+
+              <div>
+                <div class="card-deckkk">
+                  <div class="cardlenguages">
+                    <img class="nueva-clase" [src]="item.ruta" />
+
+                    <div class="">
+                      <!-- <p class="card-text">{{ item.description }}</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="margen">
+  <h5>
+    <span style="margin-left: 85px; color: #fff" class="display-5"
+      ><em> Contact </em></span
     >
   </h5>
 </div>
