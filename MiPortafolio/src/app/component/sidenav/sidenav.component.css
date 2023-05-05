@@ -9,15 +9,12 @@
     box-shadow:  0.063rem 0 1.25rem 0 #8690a4;
 }
 
-
     .logo-container{
 
         display: flex;
         align-items: center;
         padding: 0.93rem 0.938rem 0 0.938rem;
-        width: 100%;
-
-       
+        width: 100%;    
     }
 
     .logo{
@@ -31,13 +28,7 @@
         font-weight:900 ;
         cursor: pointer;
         border: none;
-
-
-
     }
-    
-
-
     .logo-text{
         margin-left: 1.5rem;
         font-size: 24px;
@@ -45,7 +36,6 @@
         color: #fff;
 
     }
-
     .btn-close{
 
         margin-left: auto;
@@ -55,25 +45,17 @@
         border-radius: 50%;
         background-color: transparent;
         border: none;
-
-       
-
     }
 
     .fa-times{
         color: #fff;
-        font-size: 24px;
-            
+        font-size: 24px;      
     }
-
-
     .sidenav-collapsed{
 
         width: 16.5625rem;
 
     }
-
-
     .sidenav-nav{
 
         list-style: none;
@@ -82,20 +64,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height:calc(100%-3.65rem) ;
+       
+        height: calc(100% - 3.65rem);
+
         cursor: pointer;
 
     }
-
 
     .sidenav-nav-item{
 
         width: 100%;
         margin-bottom: 0.625rem;
-
     }
-
-
 
     .sidenav-nav-link{
         display: flex;
@@ -105,10 +85,7 @@
         text-decoration: none;
         border-radius: 0.625rem;
         transition: all .3s ease;
-
     }
-
-
     .sidenav-link-icon{
 
         font-size: 22px;
@@ -116,24 +93,15 @@
         min-width: 2rem;
         margin: 0.05rem;
         text-align: center;
-
     }
-
     .sidenav-link-text{
         margin-left: 1.5rem ;
-
-
     }
-
-
 
     .sidenav-nav-item:hover > .sidenav-nav-link {
         background-color: #fff;
         color: #000;
       }
-
-
-
 
       .active {
         background-color: #fff;
@@ -143,11 +111,6 @@
       .active .sidenav-link-text {
         color: #000;
       }
-      
-      
-
-      
-      /*contenido  */
 
       .contenido {
         margin-left: 5rem;
@@ -155,26 +118,20 @@
         background-color: #7c9ecc;
         height: auto;
         font-family: 'Roboto', sans-serif;
-        
-       
-        
+
       }
-      
       .caption {
         margin-top: 4rem;
         text-align: left;
         /* text-align: center; */
       }
-      
       .teal {
         color: #004d40;
       }
-      
       .typing {
         display: inline-block;
         animation: typing 2s steps(20, end) infinite;
       }
-      
       @keyframes typing {
         from {
           width: 0;
@@ -184,31 +141,18 @@
         }
       }
 
-  /* -------------------------------------------contenido2-------------------------------------------------------- */
-
-
-
   .contenido2 {
-   
     margin-left: 5rem;
     width: auto;
-   
-   
     height: auto;
-    
-  
   }
-
-
   .caption {
     margin-top: 4rem;
     text-align: center;
   }
-  
   .teal {
     color: #004d40;
   }
-  
   .typing {
     display: inline-block;
     animation: typing 2s steps(20, end) infinite;
@@ -219,24 +163,19 @@
       height: auto;
      margin-left:5rem ;
       width: 60%;
-      overflow-y: auto; /* agregamos una barra de desplazamiento vertical si es necesario */
+      overflow-y: auto; 
       margin-left:1rem;
-     
     }
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
-    /* Estilos para dispositivos medianos */
     .contenido2 {
       height: auto;
-      height:auto; /* altura máxima */
-     
+      height:auto; 
       width: 60%;
-      overflow-y: auto; /* agregamos una barra de desplazamiento vertical si es necesario */
- 
+      overflow-y: auto; 
     }
   }
-  
   @keyframes typing {
     from {
       width: 0;
@@ -245,15 +184,6 @@
       width: 100%;
     }
   }
-
-
-
-
-
-
-
-  /* -------------------------------------------contenido3-------------------------------------------------------- */
-
   .contenido3 {
     /* display: flex; */
     background-color: #fff;
@@ -261,30 +191,24 @@
     max-width: 60%;
     width: 100%;
   }
-  
   @media (max-width: 300px) {
     .my-card-experience {
       width: 100%;
       margin-bottom: 2rem;
     }
   }
-  
   @media (min-width: 301px) and (max-width: 991px) {
-    /* Estilos para dispositivos medianos */
     .contenido3 {
       height: auto;
       text-align: left;
       width: auto;
       overflow-y: auto;
     }
-  }
-  
-
+  }  
   .card-body ul {
     max-width: 100%;
     overflow-x: scroll;
   }
-  
   @media (max-width: 576px) {
     .contenido3 {
       height: auto;
@@ -292,60 +216,38 @@
       width: auto;
       max-width: auto;
       align-items: center;
-
-
     }
    .my-card-experience {
       width: 100%;
     }
-    
   }
-
   @media (max-width: 576px) {
     .contenido3 {
       height: auto;
       text-align: left;
       width: 100%;
       max-width: 80% ;
-      overflow-y: auto; /* agregamos una barra de desplazamiento vertical si es necesario */
+      overflow-y: auto;
       margin-left: 5rem;
-     
     }
     .my-card-experience {
       width: 100%;
     }
-   
   }
-  
-  
-  
-
-  
-
-
-      /* ---------------------------------------------------contenido4---------------------------------------------- */
-
-
       .contenido4 {
         display: flex;
         background-color: #fff;
         padding: 2rem;
         height: auto;
-        /* margin-left: 5rem;  */
         width: 60%;
-      
       }
-
-
       .caption {
         margin-top: 4rem;
         text-align: center;
-      }
-      
+      } 
       .teal {
         color: #004d40;
       }
-      
       .typing {
         display: inline-block;
         animation: typing 2s steps(20, end) infinite;
@@ -355,27 +257,19 @@
         .contenido4 {
           height:auto;
           align-items: center;
-          
           width: 80%;
-          overflow-y: auto; /* agregamos una barra de desplazamiento vertical si es necesario */
+          overflow-y: auto; 
           margin-left: 5rem;
         }
       }
-
       @media (min-width: 768px) and (max-width: 991px) {
-        /* Estilos para dispositivos medianos */
         .contenido4 {
-
           align-items: center;
-         
-          height:auto; /* altura máxima */
-        
+          height:auto; 
           width: 80%;
-          overflow-y: auto; /* agregamos una barra de desplazamiento vertical si es necesario */
-     
+          overflow-y: auto;     
         }
-      }
-      
+      }    
       @keyframes typing {
         from {
           width: 0;
@@ -384,79 +278,34 @@
           width: 100%;
         }
       }
-
       @media screen and (min-width: 768px) {
         .my-card {
           margin-left: 2rem;
           margin-right: 2rem;
         }
       }
-
-
-      
       @media screen and (min-width: 768px) {
         .my-card-methodologies {
           margin-left: 10rem;
           margin-right: 10rem;
         }
       }
-
       @media screen and (min-width: 768px) {
         .my-card-framework {
           margin-left: 5rem;
           margin-right: 2rem;
         }
       }
-
-
-    
-
-
       @media screen and (min-width: 300px) {
         .my-card {
-          margin-left: 5px;
-         
+          margin-left: 5px; 
         }
-      }
-
-
-
-      
+      } 
       @media screen and (min-width: 300px) {
          .my-card-methodologies {
-          margin-left: 10px;
-
-         
+          margin-left: 10px; 
         }
       }
-
-
-
-
-     
-
-      
-    
-
-
-
-
-
-
-
-
-
-
-
-      
-      
-      
-     
-      
-
-      
-      
-   /* profile */
    .profile-pic {                                        
     width: 100px;
     height: 120px;
@@ -464,93 +313,51 @@
     border-radius: 50%;
     box-shadow: 0 0 0 3px #fff, 0 0 0 4px #888;
   }
-
-
-
   .title{
-    
-      background-color: #0064a4 !important;
-     
-    
-  }
-
-  .title2{
-    
-    color: #0064a4 !important;
-   
-  
+      background-color: #0064a4 !important;}
+.title2{
+ color: #0064a4 !important;
 }
-
-
   .caption {
     margin-top: 4rem;
     text-align: left;
     color: #fff;
   }
-
-
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.4);
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-
   @media only screen and (min-width: 768px) {
     .container dd {
       width: 70%;
       margin: 2rem 2rem;
     }
   }
-
- 
-
   .container dd {
     line-height: 1.9;
- 
-   
-   
   }
-  
-
-
-
   .elemento {
   display: none;
   margin-right: 0.5em;
 }
-
 .actual {
   display: inline;
 }
-
 .animated-text {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
-
 .animated-text span {
   opacity: 0;
   position: absolute;
   transition: opacity 0.5s ease-in-out;
 }
-
 .animated-text span.active {
   opacity: 1;
 }
-
 .animated-text span:first-child {
   position: relative;
 }
-
 #linea2, #linea3 {
   display: none;
 }
-
-/* puntero   */
 .puntero {
   position: absolute;
   left: 0;
@@ -561,15 +368,11 @@
   animation: parpadeo 1s infinite;
   caret-color: transparent;
 }
-
 @keyframes parpadeo {
   50% {
     opacity: 0;
   }
 }
-
-
-/* Botones */
 .icon-btn {
   margin-left: auto;
   width: 50px;
@@ -585,46 +388,28 @@
   align-items: center;
   margin: 4px;
 }
-
 .github {
   color: black;
 }
-
 .icon-btn.github {
   color:black;
 }
-
 .icon-btn.github:hover {
   background-color: black;
   color: #FFFFFF;
 }
-
-
-
 .icon-btn.linkedin {
   color: #0064a4;
 }
-
 .icon-btn.linkedin:hover {
   background-color: #0064a4;
   color: #FFFFFF;
 }
-
-
-
-
-
 .social {
   margin: 0 auto;
   width: auto;
   text-align: inherit;
- 
- 
 }
-
-
-
-
 .margen {
   background-color: #0064a4;
   height: 100px;
@@ -632,69 +417,46 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  margin-left: 2rem;
-}
 
+}
 @media (max-width: 576px) {
   .margen {
     justify-content: center;
   }
 }
-
-
-
 @media (max-width: 576px) {
   .col-sm-8 p {
-    font-size: 16px; /* ajuste el tamaño de fuente según sea necesario */
+    font-size: 16px; 
   }
 }
-
-
-
 .card-deckkk {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .cardlenguages {
   width: calc(33.33% - 1rem);
   margin-bottom: 1rem;
 }
 
-
-
-
-
-
 .nueva-clase {
   max-width: 60px;
 }
-
-
 .no-underline {
-  text-decoration: none; /* Quita el subrayado */
+  text-decoration: none; 
   color: #0064a4 !important;
- 
-  
 }
-
-/* Aplicamos la clase "no-underline" a los enlaces dentro de la clase "title2" */
 .title2 a.no-underline {
-  text-decoration: none; /* Quita el subrayado */
-  color: #0064a4 !important; /* Hereda el color del texto de la clase "title2" */
-  font-weight: inherit; /* Hereda el peso de fuente de la clase "title2" */
-  /* Puedes seguir heredando otros estilos de la clase "title2" si lo deseas */
+  text-decoration: none; 
+  color: #0064a4 !important; 
+  font-weight: inherit; 
 }
-
-
 .card {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra de 2px hacia abajo */
-  transition: box-shadow 0.2s ease-in-out; /* Agrega una transición suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease-in-out; 
 }
-
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra a 4px hacia abajo cuando se pasa el ratón por encima */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 
