@@ -632,6 +632,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+  margin-left: 2rem;
 }
 
 @media (max-width: 576px) {
@@ -665,6 +666,7 @@
 
 
 
+
 .nueva-clase {
   max-width: 60px;
 }
@@ -684,6 +686,17 @@
   font-weight: inherit; /* Hereda el peso de fuente de la clase "title2" */
   /* Puedes seguir heredando otros estilos de la clase "title2" si lo deseas */
 }
+
+
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra de 2px hacia abajo */
+  transition: box-shadow 0.2s ease-in-out; /* Agrega una transición suave */
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra a 4px hacia abajo cuando se pasa el ratón por encima */
+}
+
 
 
 

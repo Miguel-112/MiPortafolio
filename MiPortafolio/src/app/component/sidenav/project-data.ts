@@ -5,7 +5,7 @@ export const ProjectData = [
 
     {
 
-        title: ' Sistema de inventarios para el almacén de repuestos de motos IMG.',
+        title: ' Sistema de inventarios para el almacén de repuestos de motos Moto Steven.',
         typeProject:'desarrollado web',
         description:'Implementar un sistema de información de inventario parael almacén de motos “IMG” en la ciudad de Valledupar.',
         module:'Proveedor, Clientes, Categoría, Marca, Repuestos, Carrito de compras, Facturas gestión de repuestos, gestión de Facturas (Consultas por rango de fechas, filtros por categorías, Marcas).',
@@ -40,7 +40,22 @@ export const ProjectData = [
         mes:'Mayo',
         anio:'2023 '
 
-    }
+    },
+
+
+    {
+
+        title: 'Sistema de Blog Autoadministrable ',
+        typeProject:'desarrollado web',
+        description:'Plataforma para crear y gestionar blogs,dinámica y fácil de usar que permite a los usuarios crear y gestionar sus propios blogs de manera intuitiva. Con esta solución, los usuarios pueden compartir contenido de calidad. ',
+        module:'El proyecto incluirá secciones tales como  Etiquetas, Categorías, Post , Usuario ( filtros por categorías, Etiquetas). ',
+        projectimpact:'',
+        technologies:' Laravel, Livewire, TailwindCSS y AlpineJS.',
+        mes:'Marzo',
+        anio:'2023 '
+
+    },
+
 
 
 
