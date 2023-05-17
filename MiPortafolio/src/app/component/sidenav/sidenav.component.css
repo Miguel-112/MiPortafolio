@@ -141,11 +141,13 @@
         }
       }
 
-  .contenido2 {
-    margin-left: 5rem;
-    width: auto;
-    height: auto;
-  }
+      .contenido2 {
+        margin-left: 5rem;
+        width: auto;
+        height: auto;
+        background-image:"assets/img/fondo.png" ;
+      }
+      
   .caption {
     margin-top: 4rem;
     text-align: center;
@@ -186,10 +188,11 @@
   }
   .contenido3 {
     /* display: flex; */
-    background-color: #fff;
+   
     padding: 2rem;
     max-width: 60%;
     width: 100%;
+    background-image:"assets/img/fondo.png" ;
   }
   @media (max-width: 300px) {
     .my-card-experience {
@@ -240,6 +243,7 @@
         padding: 2rem;
         height: auto;
         width: 60%;
+        background-image:"assets/img/fondo.png" ;
       }
       .caption {
         margin-top: 4rem;
@@ -327,6 +331,8 @@
     .container dd {
       width: 70%;
       margin: 2rem 2rem;
+      
+      
     }
   }
   .container dd {

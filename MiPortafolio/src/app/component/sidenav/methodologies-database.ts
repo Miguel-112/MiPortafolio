@@ -6,28 +6,28 @@ export const methodologiesData = [
 
     {
         name: 'Git',
-        ruta:"/assets/img/git.png"
+        ruta:"assets/img/git.png"
    
     },
 
 
     {
         name: 'Git Hub',
-        ruta:"/assets/img/github.png"
+        ruta:"assets/img/github.png"
    
     },
 
     {
         
      name: 'SOLID',
-     ruta:"/assets/img/solid.jpeg"
+     ruta:"assets/img/solid.jpeg"
 
     },
     
 
     {
         name: 'Scrum',
-        ruta:"/assets/img/scrum-development.png"
+        ruta:"assets/img/scrum-development.png"
    
     },
 

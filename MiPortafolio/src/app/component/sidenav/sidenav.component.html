@@ -5,7 +5,8 @@
 
     <a href="#presentation" (click)="toggleCollapse()">
       <img
-        src="/assets/img/foto.jpg"
+      src="assets/img/foto.jpg"
+
         class="circle img-responsive profile-pic"
         *ngIf="collapsed"
         alt="avatar"
@@ -88,7 +89,8 @@
     <li class="sidenav-nav-item">
       <a
         class="sidenav-nav-link"
-        href="#presentacion2"
+        href="https://drive.google.com/file/d/1WldzcF1DXn3rRWFHsAOuBODWWpvguU0f/view?usp=share_link"
+        target="_blank"
         (click)="toggleCollapse()"
       >
         <i class="fas fa-file-alt"></i>
@@ -150,21 +152,26 @@
 
         <dd class="col-sm-8">
           <p>
-            <button type="button" class="btn btn-light">Read more</button>
+            <a type="button"  href="#aboutme" class="btn btn-light">Read more</a>
 
-            <button
+            <a
+             href="#conctame"
               style="margin-left: 5px"
               type="button"
               class="btn btn-outline-dark"
+              
             >
               Contact Me
-            </button>
+            </a>
           </p>
         </dd>
       </dl>
     </div>
   </div>
 </div>
+
+
+
 
 <div class="margen">
   <h5>
@@ -218,15 +225,24 @@
         <div class="card">
           <div class="card-header">
             <p class="title2">
-              <em> {{ project.title }}</em>
+
+              
+              <em> {{ project.title }}</em> <br>
             </p>
 
             <p>
-              <em class="text-right">{{ project.typeProject }}</em>
+              <em class="text-right">{{ project.typeProject }}</em> <br>
+             
             </p>
           </div>
 
           <div class="card-body">
+             <p><em> <a class="title2" *ngIf="project.linkporject !=''" href="{{project.linkporject}}" target="_blank" style="text-decoration: none;;">
+              <i class="fab fa-github"></i> Link Proyecto Github</a></em></p>
+             <p><em> <a class="title2" *ngIf="project.linkfrontend !=''" href="{{project.linkfrontend}}" target="_blank" style="text-decoration: none;;">
+              <i class="fab fa-github"></i>Link Frontend Github</a></em></p>
+             <p><em> <a class="title2" *ngIf="project.linkBackend !=''" href="{{project.linkBackend}}" target="_blank" style="text-decoration: none;;">
+              <i class="fab fa-github"></i>Link Backend Github</a></em></p>
             <ul>
               <li>
                 <p>
@@ -239,7 +255,7 @@
               <li>
                 <p>
                   <em>
-                    se desarrolló los módulos de:
+                    Realice:
                     <strong>
                       {{ project.module }}
                     </strong>
@@ -247,7 +263,26 @@
                 </p>
               </li>
 
-              <li>
+              <li *ngIf="project.collaboration1 !=''">
+                <p>
+                  <em>{{ project.collaboration1 }}</em>
+                </p>
+              </li>
+
+              <li *ngIf="project.collaboration1 !=''">
+                <p>
+                  <em>{{ project.collaboration2 }}</em>
+                </p>
+              </li>
+
+
+              <li *ngIf="project.collaboration3 !=''">
+                <p>
+                  <em>{{ project.collaboration3 }}</em>
+                </p>
+              </li>
+
+              <li *ngIf="project.projectimpact !=''">
                 <p>
                   <em>{{ project.projectimpact }}</em>
                 </p>
